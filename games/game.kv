@@ -1,0 +1,122 @@
+<MySwiper@MDSwiperItem>
+
+BoxLayout:
+    orientation:'vertical'
+    MDCard:
+        size_hint:None, None
+        size:600, 80
+        pos_hint:{"center_x": 0.5, "center_y":0}
+        elevation:10
+        padding:20
+        spacing:15
+        orientation:'horizontal'
+            
+        Button:
+            text:"Notify"
+            background_normal:''
+            background_color:(0,1,0,0.5)
+            
+        Button:
+            text:"Rewords"
+            background_normal:''
+            background_color:(0,0.5,1,0.5)
+            
+        Button:
+            text:"Mail"
+            background_normal:''
+            background_color:(1,0,0,0.5)
+            
+        Button:
+            text:"Chat"
+            background_normal:''
+            background_color:(0.5,0,1,0.5)
+            
+        Button:
+            text:"Pay"
+            background_normal:''
+            background_color:(1,0,0,0.5)
+            
+        Button:
+            text:"Search"
+            background_normal:''
+            background_color:(0,0,0,0.5)
+                
+        Button:
+            text:"Games"
+            background_normal:''
+            color:(0,0,0,1)
+            background_color:(1,1,0,0.5) 
+        
+
+    Screen:
+        MDCard:
+            size_hint:None, None
+            size:130, 200
+            pos_hint:{"center_x": 0.2, "center_y":0.5}
+            elevation:10
+            padding:25
+            spacing:25
+            orientation:'vertical'      
+            MDLabel:
+                id: game_label
+                text:"Game1"   
+                font_size:20
+                halign:'center'
+                size_hint_y:None
+                height:self.texture_size[1]
+                padding_y:5
+            MDCard:
+                size_hint:None, None
+                size:80, 100
+                Image:
+                    source:'images/sunrise.png'
+    Screen:
+        MDCard:
+            size_hint:None, None
+            size:130, 200
+            pos_hint:{"center_x": 0.2, "center_y":0.5}
+            elevation:10
+            padding:25
+            spacing:25
+            orientation:'vertical'      
+            MDLabel:
+                id: game_label
+                text:"Game1"   
+                font_size:20
+                halign:'center'
+                size_hint_y:None
+                height:self.texture_size[1]
+                padding_y:5
+            MDCard:
+                size_hint:None, None
+                size:80, 100
+                Image:
+                    source:'images/sunrise.png'
+
+
+        
+    MDCard:
+        size_hint:None, None
+        size:600, 80 
+        pos_hint:{"center_x": 0.5, "center_y":0}
+        BoxLayout:
+            orientation:"horizontal"
+            padding:15
+            spacing:15
+            Image:
+                source:'images/home.png'
+            Image:
+                source:'images/sunrise.png'
+            Image:
+                source:'images/shopping.png'
+            Image:
+                source:'images/dollar.jfif'
+            Image:
+                source:'images/telephone.png'
+            Image:
+                source:'images/Earth.ico'
+            Image:
+                source:'images/help.jfif'                        
+
+
+

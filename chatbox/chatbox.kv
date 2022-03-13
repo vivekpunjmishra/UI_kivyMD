@@ -1,0 +1,159 @@
+<MySwiper@MDSwiperItem>
+<CustomOneLineIconListItem>
+
+    IconLeftWidget:
+        icon: root.icon
+
+BoxLayout:
+    orientation:'vertical'
+    MDCard:
+        size_hint:None, None
+        size:600, 80
+        pos_hint:{"center_x": 0.5, "center_y":0}
+        elevation:10
+        padding:20
+        spacing:15
+        orientation:'horizontal'
+            
+        Button:
+            text:"Notify"
+            background_normal:''
+            background_color:(0,1,0,0.5)
+            
+        Button:
+            text:"Rewords"
+            background_normal:''
+            background_color:(0,0.5,1,0.5)
+            
+        Button:
+            text:"Mail"
+            background_normal:''
+            background_color:(1,0,0,0.5)
+            
+        Button:
+            text:"Chat"
+            background_normal:''
+            background_color:(0.5,0,1,0.5)
+            
+        Button:
+            text:"Pay"
+            background_normal:''
+            background_color:(1,0,0,0.5)
+            
+        Button:
+            text:"Search"
+            background_normal:''
+            background_color:(0,0,0,0.5)
+                
+        Button:
+            text:"Games"
+            background_normal:''
+            color:(0,0,0,1)
+            background_color:(1,1,0,0.5) 
+        
+
+    Screen:
+        MDCard:
+            size_hint:None, None
+            size:600, 60
+            pos_hint:{"center_x": 0.5, "center_y":0.7}
+            #elevation:10
+            padding:15
+            spacing:15
+            orientation:'horizontal'      
+            Button:
+                size_hint:None, None
+                size:80, 40
+                text:"Chat"
+                background_normal:''
+                background_color:(0.5,0,1,0.5)
+            MDCard:
+                MDLabel:
+                    pos_hint:{"center_x": 0.5, "center_y":0.75}
+                    text:"some advertisement or content"
+                    size_hint:None, None
+                    size:400, 50
+    Screen:
+        MDCard:
+            size_hint:None, None
+            size:600, 280
+            pos_hint:{"center_x": 0.5, "center_y":0.5}
+            elevation:10
+            padding:15
+            spacing:15
+            orientation:'vertical'
+            BoxLayout:
+                orientation:'horizontal'    
+                MDIconButton:
+                    icon: 'account'          
+                MDTextField:
+                    halign: 'left'
+                    mode: "rectangle"
+                    size_hint:None, None
+                    size:400,80
+                    pos_hint:{"center_x":0.2}
+            MDTextField:
+                halign: 'left'
+                mode: "rectangle"
+                size_hint:None, None
+                size:400,80
+                pos_hint:{"center_x":0.6} 
+            BoxLayout:
+                orientation:'horizontal'    
+                MDIconButton:
+                    icon: 'account'          
+                MDTextField:
+                    halign: 'left'
+                    mode: "rectangle"
+                    size_hint:None, None
+                    size:400,80
+                    pos_hint:{"center_x":0.2}
+            MDTextField:
+                halign: 'left'
+                mode: "rectangle"
+                size_hint:None, None
+                size:400,80
+                pos_hint:{"center_x":0.6} 
+    Screen:
+        MDCard:
+            size_hint:None, None
+            size:400, 60
+            padding:10
+            pos_hint:{"center_x": 0.38, "center_y":0.25}            
+            BoxLayout:
+                orientation:'horizontal'    
+                MDTextField:
+                    mode: "rectangle"
+                    size_hint:None, None
+                    size:370,50
+                Widget:
+                    size_hint_x:None    
+                MDIconButton:
+                    padding:10
+                    icon: 'images/plus.png'     
+
+    MDCard:
+        size_hint:None, None
+        size:600, 70 
+        pos_hint:{"center_x": 0.5, "center_y":0}
+        BoxLayout:
+            orientation:"horizontal"
+            padding:15
+            spacing:15
+            Image:
+                source:'images/home.png'
+            Image:
+                source:'images/sunrise.png'
+            Image:
+                source:'images/shopping.png'
+            Image:
+                source:'images/dollar.jfif'
+            Image:
+                source:'images/telephone.png'
+            Image:
+                source:'images/Earth.ico'
+            Image:
+                source:'images/help.jfif'                        
+
+
+
